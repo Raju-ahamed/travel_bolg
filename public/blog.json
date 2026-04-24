@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Cox's Bazar",
+        "desc": "Embark on a journey to the world’s longest natural sandy sea beach, stretching over 120 kilometers along the Bay of Bengal. Cox’s Bazar offers a unique blend of towering cliffs, colorful pagodas, and surfing waves. Whether you are watching the golden sunset at Inani Beach or exploring the bustling local fish markets, the salty breeze and serene atmosphere provide an unforgettable coastal escape.",
+        "img": "/images/Rectangle 1.png"
+    },
+    {
+        "id": 2,
+        "name": "Rangamati",
+        "desc": "Nestled among the lush green hills of the Chittagong Hill Tracts, Rangamati is a sanctuary of peace centered around the magnificent Kaptai Lake. Traverse the iconic Hanging Bridge, visit ancient Buddhist monasteries, and experience the rich cultural tapestry of the indigenous communities. The emerald waters and mist-covered mountains make it a paradise for nature lovers and photographers seeking tranquility away from the city.",
+        "img": "/images/Rectangle 26.png"
+    },
+    {
+        "id": 3,
+        "name": "Bandarban",
+        "desc": "Experience the majestic 'Roof of Bangladesh,' where the peaks of Nilgiri and Thanchi touch the clouds. Bandarban is home to the country's highest peaks and breathtaking waterfalls like Amiakhum. The winding roads through deep valleys and the golden architecture of the Buddha Dhatu Jadi temple offer a spiritual and adventurous retreat into the most ruggedly beautiful landscape the country has to offer.",
+        "img": "/images/Rectangle 27.png"
+    },
+    {
+        "id": 4,
+        "name": "Sajek Valley",
+        "desc": "Known as the Queen of Hills, Sajek Valley is located deep within the Verdant Hills of the Kasalong range. Rising 1,800 feet above sea level, it offers a literal walk above the clouds. The sunrise here is legendary, painting the valley in hues of orange and pink as the mist clears to reveal the lush valley below, while the vibrant culture of the local Lusai people adds warmth to the cool mountain air.",
+        "img": "/images/Rectangle 28.png"
+    },
+    {
+        "id": 5,
+        "name": "Sreemangal",
+        "desc": "Step into the tea capital of Bangladesh, a land covered in an endless carpet of vibrant green tea gardens. Sreemangal is a haven for biodiversity, featuring the Lawachara National Park where rare hoolock gibbons swing through the canopy. Savor the world-famous seven-layered tea while cycling through hilly trails, exploring pineapple plantations, and discovering the hidden wetlands of the Baikka Beel bird sanctuary.",
+        "img": "/images/Sajek.png"
+    },
+    {
+        "id": 6,
+        "name": "Sundarbans",
+        "desc": "Venture into the mysterious depths of the world’s largest mangrove forest and a UNESCO World Heritage site. The Sundarbans is a labyrinth of tidal waterways and mudflats where the Royal Bengal Tiger roams freely. As you cruise through the narrow creeks of Kotka and Hiron Point, you will encounter spotted deer, saltwater crocodiles, and a symphony of exotic birds in this wild, untamed coastal frontier.",
+        "img": "/images/Sreemongol.png"
+    },
+    {
+        "id": 7,
+        "name": "Sylhet",
+        "desc": "Sylhet is a land of spiritual heritage and natural wonders, characterized by the holy shrines of Sufi saints and the crystal-clear waters of Lalakhal. From the turquoise swamp forests of Ratargul to the cascading waterfalls of Jaflong at the Indian border, Sylhet offers a diverse landscape. The rolling hills of the Jafflong tea estates and the rain-washed greenery create a refreshing and soul-soothing travel experience.",
+        "img": "/images/sundorbon.png"
+    }
+]
