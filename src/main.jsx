@@ -6,7 +6,8 @@ import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import Home from './component/Home/Home.jsx';
 import Root from './component/Root/Root.jsx';
-import Booking from './component/Pages/Booking/Booking.jsx';
+import Booking from './component/Pages/Booking/AllBooking.jsx';
+import AllBooking from './component/Pages/Booking/AllBooking.jsx';
 
 const router = createBrowserRouter([
   {
@@ -14,9 +15,15 @@ const router = createBrowserRouter([
     element: <Root></Root>,
     children: [
       { path: "/", element: <Home></Home> },
-      { path: "/booking/:id", element:<Booking></Booking> }
+      
     ]
   },
+  {
+
+    path: "/booking/:id",
+    element: <AllBooking />,
+    loader: () => fetch("/blog.json"),
+  }
 ]);
 createRoot(document.getElementById('root')).render(
   <StrictMode>
