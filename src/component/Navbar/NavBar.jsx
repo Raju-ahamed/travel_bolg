@@ -17,7 +17,7 @@ const NavBar = () => {
                     <button>About</button>
                 </div>
                 <div className='col-span-2 mx-auto'>
-                    <button className='btn btn-accent'>log in</button>
+                    <NavLink to="/login"><button className='btn btn-accent'>log in</button></NavLink>
                 </div>
             </div>
         </nav>
