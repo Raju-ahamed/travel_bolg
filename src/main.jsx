@@ -10,6 +10,7 @@ import Booking from './component/Pages/Booking/AllBooking.jsx';
 import AllBooking from './component/Pages/Booking/AllBooking.jsx';
 import Login from './component/Pages/Login/Login.jsx';
 import Register from './component/Pages/Register/Register.jsx';
+import AuthProvider from './component/Auth/AuthProvider.jsx';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,8 @@ const router = createBrowserRouter([
 ]);
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </StrictMode>,
 )

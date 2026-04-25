@@ -1,18 +1,33 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { NavLink } from 'react-router';
+import { AuthContext } from '../../Auth/AuthContex';
 
 const Login = () => {
+    const { userLogin } = useContext(AuthContext)
+    const handleLogIn = (e) => {
+        e.preventDefault();
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+        console.log(email, password);
+        userLogin(email, password)
+            .then(
+                data => console.log(data)
+            )
+            .catch(err => console.log(err))
+
+    }
+
     return (
         <div className='w-11/12'>
             <div className=' mt-30'>
-                <form className="fieldset mx-auto bg-base-200 border-base-300 rounded-box w-lg border p-4">
+                <form onSubmit={handleLogIn} className="fieldset mx-auto bg-base-200 border-base-300 rounded-box w-lg border p-4">
                     <legend className="font-bold text-2xl text-center">Please, Log in!!</legend>
 
                     <label className="label">Email</label>
-                    <input type="email" className="input" placeholder="Email" />
+                    <input type="email" name='email' className="input" placeholder="Email" />
 
                     <label className="label">Password</label>
-                    <input type="password" className="input" placeholder="Password" />
+                    <input type="password" name='password' className="input" placeholder="Password" />
 
                     <button className="btn btn-neutral w-50 mt-4">Login</button>
                     <p>Dont Have Any Acount?
