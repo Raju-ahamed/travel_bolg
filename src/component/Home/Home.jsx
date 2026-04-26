@@ -54,7 +54,7 @@ const Home = () => {
         }
     ];
 
-    
+
     const [currentIndex, setCurrentIndex] = useState(0);
     const nextSlide = () => {
         setCurrentIndex((prev) => (prev === destinations.length - 1 ? 0 : prev + 1));

@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import logo from '/logo.png'
 import { NavLink } from 'react-router';
+import { AuthContext } from '../Auth/AuthContex';
 
 const NavBar = () => {
+    const { user, userSignOut } = useContext(AuthContext);
+    const handleSignOut = () => {
+        userSignOut().then().catch();
+    }
+
     return (
         <nav className='navbar bg-transparent absolute top-0 z-50'>
             <div className='grid grid-cols-12  m-4 mx-auto w-11/12  items-center'>
@@ -17,7 +23,10 @@ const NavBar = () => {
                     <button>About</button>
                 </div>
                 <div className='col-span-2 mx-auto'>
-                    <NavLink to="/login"><button className='btn btn-accent'>log in</button></NavLink>
+                    {
+                        user ? <button onClick={handleSignOut} className='btn btn-accent'>Sign Out</button>
+                            : <NavLink to="/login"><button className='btn btn-accent'>log in</button></NavLink>
+                    }
                 </div>
             </div>
         </nav>

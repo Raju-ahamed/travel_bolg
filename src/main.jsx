@@ -11,6 +11,7 @@ import AllBooking from './component/Pages/Booking/AllBooking.jsx';
 import Login from './component/Pages/Login/Login.jsx';
 import Register from './component/Pages/Register/Register.jsx';
 import AuthProvider from './component/Auth/AuthProvider.jsx';
+import PrivateRoute from './component/PrivateRout/PrivateRoute.jsx';
 
 const router = createBrowserRouter([
   {
@@ -24,7 +25,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/booking/:id",
-    element: <AllBooking />,
+    element: <PrivateRoute><AllBooking /></PrivateRoute>,
     loader: () => fetch("/blog.json"),
   },
 
